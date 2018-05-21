@@ -27,4 +27,9 @@ long nationalDebt = 18100000000000L;
 
 // Floating Point Types
 float milesInAMarathon = 26.2f;
-double atomwidthInMeters = 0.00000000001d; 
+double atomwidthInMeters = 0.00000000001d;
+
+// Character and Boolean Types
+char regularU = 'U';
+char accentedU = '\u00DA'; // will return a 'U' with an accent mark on top of it
+boolean iLoveJava = true;
