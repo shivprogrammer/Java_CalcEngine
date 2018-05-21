@@ -33,3 +33,12 @@ double atomwidthInMeters = 0.00000000001d;
 char regularU = 'U';
 char accentedU = '\u00DA'; // will return a 'U' with an accent mark on top of it
 boolean iLoveJava = true;
+
+// Prefix/Postfix Operators
+int myVal = 5;
+System.out.println(++myVal); // will return 6, since the 5 was incremented first
+System.out.println(myVal); // returns 6
+
+int myVal = 5;
+System.out.println(myVal++); // returns 5
+System.out.pritntln(myVal); // returns 6
