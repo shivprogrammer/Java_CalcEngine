@@ -18,3 +18,13 @@ public class Main {
     System.out.println(myVar); // this will actually return 100, because when it was defined, anotherVar's value was 100. Meaning that variables do not change dynamically with their definitions.
   }
 }
+
+// Integer Types
+byte numberOfEnglishLetters = 26;
+short feetInAMile = 5283;
+int milesToSun = 92960000;
+long nationalDebt = 18100000000000L;
+
+// Floating Point Types
+float milesInAMarathon = 26.2f;
+double atomwidthInMeters = 0.00000000001d; 
