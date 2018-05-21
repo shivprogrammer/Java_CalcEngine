@@ -42,3 +42,14 @@ System.out.println(myVal); // returns 6
 int myVal = 5;
 System.out.println(myVal++); // returns 5
 System.out.pritntln(myVal); // returns 6
+
+// Compound Assignment Operators
+int myVal = 50;
+myVal -= 5;
+System.out.println(myVal); // returns 45
+
+int result = 100;
+int val1 = 5;
+int val2 = 10;
+result /= val1* val2; // 100 / 50
+System.out.println(result); // returns 2
