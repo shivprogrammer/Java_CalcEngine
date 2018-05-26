@@ -9,13 +9,16 @@ public class Main {
     short shortVal = 7;
     long longVal = 5;
 
-    short result1 = byteVal; // this works
-    short result1 = longVal; // this will not work due to type conversion clash
-    short result1 = (short) longVal; // this will work
-    short result1 = (short) byteVal; // this also works, but is honestly unnecessary and seems like programmatic pretentiousness
+    short result1 = byteVal; // success
+    short result1 = longVal; // error due to type conversion clash
+    short result1 = (short) longVal; // success
+    short result1 = (short) byteVal; // success, but is unnecessary
 
     short result2 = byteVal - longVal; // this will not work because you cannot convert a long to a short
     short result2 = (short) (byteVal - longVal); // this works
+
+    long result3 = longVal - floatVal; // error, incompatible types: possible lost conversion from float to long
+    float result3 = longVal - floatVal; // success
 
     System.out.println("Success");
   }
