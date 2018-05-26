@@ -22,6 +22,10 @@ public class Main {
     float result3 = longVal - doubleVal; // error, incompatible types: possible lossy conversion from double to float
     double result3 = longVal - doubleVal; // success
 
+    long result4 = shortVal - longVal + floatVal; // error, incompatible types: possible lost conversion from float to LONG
+    long result4 = shortVal - longVal + floatVal + doubleVal; // error, incompatible types: possible lost conversion from float to DOUBLE
+    long result4 = (long) (shortVal - longVal + floatVal + doubleVal); // success
+    
     System.out.println("Success");
   }
 }
