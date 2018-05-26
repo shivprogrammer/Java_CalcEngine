@@ -14,6 +14,9 @@ public class Main {
     short result1 = (short) longVal; // this will work
     short result1 = (short) byteVal; // this also works, but is honestly unnecessary and seems like programmatic pretentiousness
 
+    short result2 = byteVal - longVal; // this will not work because you cannot convert a long to a short
+    short result2 = (short) (byteVal - longVal); // this works
+
     System.out.println("Success");
   }
 }
