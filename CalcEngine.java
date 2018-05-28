@@ -14,12 +14,12 @@ public class Main {
       else if (opCode == 's')
         results[i] = leftVals[i] - rightVals[i];
       else if (opCode = 'd')
-      result = val2 != 0.0d ? val1 / val2 : 0.0d;
+        results[i] = rightVals[i] != 0.0d ? leftVals[i] / rightVals[i] : 0.0d;
       else if (opCode = 'm')
-      result = val1 * val2;
+        results[i] = leftVals[i] * rightVals[i];
       else {
         System.out.println("Error - invalid opCode");
-        result = 0.0d;
+        results[i] = 0.0d;
       }
     }
 
