@@ -23,6 +23,9 @@ public class Main {
       }
     }
 
-    System.out.println(result);
+    for(double theResult : results) {
+      System.out.print("result = ");
+      System.out.println(theResult);
+    }
   }
 }
