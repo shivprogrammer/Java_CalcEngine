@@ -9,3 +9,6 @@ for (int i = 0; theVals.length; i++)
   sum += theVals[i];
 
 System.out.println(sum);
+
+// same array initialization as above execept in a far cleaner fashion
+float[] theVals = { 10.0f, 20.0f, 15.0f }; // notice that they are CURLY BRACES, not brackets
