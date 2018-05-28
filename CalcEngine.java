@@ -12,15 +12,20 @@ public class Main {
       switch (opCodes[i]) {
         case 'a':
           results[i] = leftVals[i] + rightVals[i];
+          break;
         case 's':
           results[i] = leftVals[i] - rightVals[i];
+          break;
         case 'd':
           results[i] = rightVals[i] != 0.0d ? leftVals[i] / rightVals[i] : 0.0d;
+          break;
         case 'm':
           results[i] = leftVals[i] * rightVals[i];
+          break;
         default:
           System.out.println("Error - invalid opCode");
           results[i] = 0.0d;
+          break;
       }
     }
 
