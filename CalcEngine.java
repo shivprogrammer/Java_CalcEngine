@@ -8,17 +8,19 @@ public class Main {
     char[] opCodes = { 'd', 'a', 's', 'm' };
     double[] results = new double[opCodes.length];
 
-    if (opCode == 'a')
-      result = val1 + val2;
-    else if (opCode == 's')
-      result = val1 - val2;
-    else if (opCode = 'd')
+    for (int i = 0; i < opCodes.length; i++) {
+      if (opCodes[i] == 'a')
+        results[i] = leftVals[i] + rightVals[i];
+      else if (opCode == 's')
+        results[i] = leftVals[i] - rightVals[i];
+      else if (opCode = 'd')
       result = val2 != 0.0d ? val1 / val2 : 0.0d;
-    else if (opCode = 'm')
+      else if (opCode = 'm')
       result = val1 * val2;
-    else {
-      System.out.println("Error - invalid opCode");
-      result = 0.0d;
+      else {
+        System.out.println("Error - invalid opCode");
+        result = 0.0d;
+      }
     }
 
     System.out.println(result);
