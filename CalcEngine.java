@@ -9,17 +9,18 @@ public class Main {
     double[] results = new double[opCodes.length];
 
     for (int i = 0; i < opCodes.length; i++) {
-      if (opCodes[i] == 'a')
-        results[i] = leftVals[i] + rightVals[i];
-      else if (opCode == 's')
-        results[i] = leftVals[i] - rightVals[i];
-      else if (opCode = 'd')
-        results[i] = rightVals[i] != 0.0d ? leftVals[i] / rightVals[i] : 0.0d;
-      else if (opCode = 'm')
-        results[i] = leftVals[i] * rightVals[i];
-      else {
-        System.out.println("Error - invalid opCode");
-        results[i] = 0.0d;
+      switch (opCodes[i]) {
+        case 'a':
+          results[i] = leftVals[i] + rightVals[i];
+        case 's':
+          results[i] = leftVals[i] - rightVals[i];
+        case 'd':
+          results[i] = rightVals[i] != 0.0d ? leftVals[i] / rightVals[i] : 0.0d;
+        case 'm':
+          results[i] = leftVals[i] * rightVals[i];
+        default:
+          System.out.println("Error - invalid opCode");
+          results[i] = 0.0d;
       }
     }
 
