@@ -12,3 +12,6 @@ class Flight {
       passengers += 1;
   }
 }
+
+Flight nycToSf;
+nycToSf = new Flight();
