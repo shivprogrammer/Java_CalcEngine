@@ -17,7 +17,12 @@ public class Flight {
 
 Flight lax1 = new Flight();
 Flight lax2 = new Flight();
+// TODO: add passengers to both flights
 
-Flight lax3;
+Flight lax3 = null;
 if lax1.hasRoom(lax2)
   lax3 = lax1.createNewWithBoth(lax2);
+
+// Using the original value of null later on the program example:
+if (lax3 != null)
+  System.out.println("Flights combined");
