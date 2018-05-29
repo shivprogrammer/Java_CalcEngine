@@ -15,3 +15,6 @@ class Flight {
 
 Flight nycToSf;
 nycToSf = new Flight();
+Flight slcToDallas = new Flight();
+
+slcToDallas.addPassenger();
