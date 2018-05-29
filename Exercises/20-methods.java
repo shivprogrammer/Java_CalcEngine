@@ -5,3 +5,11 @@ public class MyClass {
     System.out.println(sum);
   }
 }
+
+MyClass m = new MyClass();
+m.showSum(7.5, 1.4, 3); // will return:
+/*
+8.9
+8.9
+8.9
+*/
