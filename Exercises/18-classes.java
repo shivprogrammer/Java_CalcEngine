@@ -10,6 +10,11 @@ class Flight {
   void addPassenger() {
     if (passengers < seats)
       passengers += 1;
+    else
+      handleTooMany();
+  }
+  void handleTooMany() {
+    System.out.println("Too many");
   }
 }
 
