@@ -14,3 +14,11 @@ public class Flight {
     return newFlight;
   }
 }
+
+Flight lax1 = new Flight();
+Flight lax2 = new Flight();
+// TODO: add passengers to both flights
+
+Flight lax3;
+if (lax1.hasRoom(lax2))
+  lax3 = lax1.createNewWithBoth(lax2); // the seats variable will be taken from lax1, but the passengers will be the addition of lax1 and lax2
