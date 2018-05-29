@@ -17,3 +17,9 @@ public class Flight {
     System.out.println("Too many");
   }
 }
+
+Flight flight1 = new Flight();
+System.out.println(flight1.passengers); // compile time error, since passengers is a private int
+
+flight1.addPassenger(); // success
+flight1.handleTooMany(); // compile time error
