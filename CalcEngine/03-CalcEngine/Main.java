@@ -9,9 +9,10 @@ public class Main {
     equations[2] = create(225.0, 17.0d, 's');
     equations[3] = create(11.0d, 3.0d, 'm');
 
-    for(double theResult : results) {
+    for(MathEquation equation : equation) {
+      equation.execute();
       System.out.print("result = ");
-      System.out.println(theResult);
+      System.out.println(equation.result);
     }
   }
 
