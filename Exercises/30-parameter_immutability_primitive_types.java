@@ -3,7 +3,7 @@ void swap(int i, int j) {
   i = j;
   j = k;
   // print i & j
-} // all of the changes that are happening to the values are only occuring to the copies, NOT the original values
+} // NOTE all of the changes that are happening to the values are only occuring to the copies, NOT the original values
 
 int val = 10;
 int val2 = 20;
