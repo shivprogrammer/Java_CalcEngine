@@ -1,6 +1,10 @@
 package com.pluralsight.calcengine;
 
 public class Main {
+  // MathEquation testEquation = new MathEquation();
+  // testEquation.execute();
+  // System.out.print("test=");
+  // System.out.println(testEquation.getResult());
 
   public static void main(String[] args) {
     MathEquation[] equations = new MathEquation(4);

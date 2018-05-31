@@ -3,7 +3,7 @@ package com.pluralsight.calcengine;
 public class MathEquation {
   private double leftVal;
   private double rightVal;
-  private char opCode;
+  private char opCode = 'a';
   private double result;
 
   public double getLeftVal() { return leftVal; }
