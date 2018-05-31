@@ -6,18 +6,19 @@ public class Passenger {
   }
 
   public Passenger(int freeBags) {
+    this(freeBags > 1 ? 25.0d : 50.0d);
     this.freeBags = freeBags;
   }
 
   public Passenger(int freeBags, int checkedBags) {
-    this(freeBags); // this will actually call the constructor above
+    this(freeBags);
     this.checkedBags = checkedBags;
+  }
+
+  private Passenger(double perBagFee) {
+    this.perBagFee = perBagFee;
   }
 }
 
-
-Passenger jane = new Passenger(2);
-jane.setCheckedBags(3);
-
-// the above code can now be condensed into the following:
+Passenger fred = new Passenger(2);
 Passenger jane = new Passenger(2, 3);
