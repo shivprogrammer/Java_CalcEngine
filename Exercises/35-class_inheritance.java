@@ -28,3 +28,8 @@ CargoFlight cf = new CargoFlight();
 cf.add1Package(1.0, 2.5, 3.0); // so you have these extended capabilities of the CargoFlight class
 Passenger jane = new Passenger(0,2);
 cf.add1Passenger(jane); // as well as the base class capabilities
+
+Flight f = new CargoFlight();
+Passenger jane = new Passenger(0,2);
+f.add1Passenger(jane);
+f.add1Package(1.0, 2.5, 1.5); // while a CargoFlight knows how to add a package, a Flight doesn't. So this wouldn't be a valid call, because we can only access methods that are visibile to the reference type.
