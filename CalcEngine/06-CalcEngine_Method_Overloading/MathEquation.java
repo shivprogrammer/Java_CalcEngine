@@ -40,7 +40,7 @@ public class MathEquation {
 
     execute();
 
-    result = (int)(result);
+    result = (int)result;
   }
 
   public void execute() {
