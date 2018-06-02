@@ -18,5 +18,25 @@ public class Main {
       System.out.print("result = ");
       System.out.println(equation.getResult());
     }
+
+    System.out.println();
+    System.out.println("Using Overloads");
+    System.out.println();
+
+    double leftDouble = 9.0d;
+    double rightDouble = 4.0d;
+    int leftInt = 9;
+    int rightInt = 4;
+
+    MathEquation equationOverload = new MathEquation('d');
+
+    equationOverload.execute(leftDouble, rightDouble);
+    System.out.print("result=");
+    System.out.println(equationOverload.getResult()); // returns 2.25
+
+    equationOverload.execute(leftInt, rightInt);
+    System.out.print("result=");
+    System.out.println(equationOverload.getResult()); // also returns 2.25
+    // the result with the int values is also 2.25, and this is due to a widening conversion (automatic type conversion). Since a double is "wider" than an int, or in other words a double can hold anything that is inside of an int, the system can go ahead an infer that conversion and go ahead and call the method that accepts doubles, even though we provided ints.
   }
 }
