@@ -20,5 +20,11 @@ class Flight {
   @Override
   public boolean equals(Object o) {
     Flight other = (Flight) o; // Because o is declared as an Object, it will only have access to members that are known by Object, it won't have access to the Flight members. So what we need to do is take that o, cast to a Flight and put it into a reference of type Flight. So now "other" will have access to the Flight information from f2
+
+    return
+      flightNumber == other.flightNumber && flightClass == other.flightClass;
   }
 }
+
+if (f1.equals(f2)) // now this will resolve to TRUE, because f1 and f2 have the same flightNumber
+  // do something
