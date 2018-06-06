@@ -3,7 +3,7 @@ public class Flight {
   @Override // no impact on run time, only used at compile time
   int getSeats() { return 12; }
 
-  public class add1Passengers() {
+  public class add1Passenger() {
     if (hasSeating())
       passengers += 1;
     else
