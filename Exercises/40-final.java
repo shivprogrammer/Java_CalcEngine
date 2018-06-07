@@ -4,7 +4,7 @@ final public class Passenger { // order of public and final doens't matter here
 public class CargoFlight extends Flight {
   // other members elided for clairty
 
-  public void add1Package(float h, float w, float d) {
+  public final void add1Package(float h, float w, float d) { // by marking the method as final, you can inherit from CargoFlight but you cannot override add1Package
     double size = h * w * d;
     if (hasCargoSpace(size))
       usedCargoSpace += size;
