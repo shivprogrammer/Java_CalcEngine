@@ -21,3 +21,12 @@ public class CargoOnlyPilot extends Pilot {
     return f.getPassengers() == 0;
   }
 }
+
+public class FullLicensePilot extends Pilot {
+  @Override
+  public boolean canAccept(Flight f) {
+    return true;
+  }
+}
+
+// So abstract allows us to define basic characteristics and behaviors in the Pilot class, but then require specific specializations in any derived class
