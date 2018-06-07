@@ -20,3 +20,5 @@ public class CargoFlight extends Flight {
     System.out.println("Not enough space");
   }
 }
+
+// CargoFlight actually does not have any methods that you can override, because add1Package is now final and hasCargoSpace and handleNoSpace are both private, so a deriving class couldn't change those.
