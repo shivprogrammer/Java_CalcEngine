@@ -12,5 +12,11 @@ public class CargoFlight extends Flight {
       handleNoSpace();
   }
 
-  
+  private boolean hasCargoSpace(float size) {
+    return usedCargoSpace + size <= maxCargoSpace;
+  }
+
+  private void handleNoSpace() {
+    System.out.println("Not enough space");
+  }
 }
