@@ -17,3 +17,9 @@ String s4 = s2.intern(); // s4 will get a reference to that exact same object in
 
 if (s3 == s4) // returns TRUE -- the benefit of using the intern method is that we can use that very inexpensive == operator to do the comparison
   // do something
+
+/*
+IN GENERAL:
+When you're doing a series of one off comparisons of strings, you'll the equals method
+But when you have situations when you expect to do a lot of comparisons to a given set of string values, that's where the intern method comes in. You'll often intern a series of string values you expect to search over and over again and put those into an array or some other collection, and then as you search that collection, you'll then intern the incoming values and use that very inexpensive == operator to see if you can find the value in that array or collection of intern string values
+/*
