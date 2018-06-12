@@ -71,5 +71,15 @@ public class CalculateHelper {
         symbol = DIVIDE_SYMBOL;
         break;
     }
+
+    StringBuilder sb = new StringBuilder(20);
+    sb.append(leftValue);
+    sb.append(' ');
+    sb.append(symbol);
+    sb.append(' ');
+    sb.append(" = ");
+    sb.append(result);
+
+    return sb.toString();
   }
 }
