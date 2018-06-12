@@ -10,7 +10,7 @@ public class Main {
       "add 25.0 92.0",        // 25.0 + 92.0 = 117.0
       "subtract 225.0 17.0",  // 225.0 - 17.0 = 108.0
       "multiply 11.0 3.0"     // 11.0 * 3.0 = 33.0
-    }
+    };
 
     MathEquation[] equations = new MathEquation(4);
     equations[0] = new MathEquation('d', 100.0d, 50.0d);
