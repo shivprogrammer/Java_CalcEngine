@@ -17,3 +17,9 @@ public class CrewMember {
     this.job = job;
   }
 }
+
+CrewMember judy =
+  new CrewMember(FlightCrewJob.CoPilot);
+
+// something happens and judy gets a promotion
+judy.setJob(FlightCrewJob.Pilot);
