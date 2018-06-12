@@ -14,5 +14,10 @@ public class CalculateHelper {
     rightValue = Double.parseDouble(parts[2]) // 2.0
   }
 
-  private void setCom
+  private void setCommandFromString(String commandString) {
+    // add -> add MathCommand.Add
+
+    if (commandString.equalsIgnoreCase(MathCommand.Add.toString()))
+      command = MathCommand.Add;
+  }
 }
