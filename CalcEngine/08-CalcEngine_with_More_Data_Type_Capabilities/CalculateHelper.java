@@ -23,7 +23,16 @@ public class CalculateHelper {
       case Subtract:
         calculator = new Subtractor(leftValue, rightValue);
         break;
+      case Multiply:
+        calculator = new Multiplier(leftValue, rightValue);
+        break;
+      case Divide:
+        calculator = new Divider(leftValue, rightValue);
+        break;
     }
+
+    calculator.calculate();
+    result = calculator.getResult();
   }
 
   private void setCommandFromString(String commandString) {
