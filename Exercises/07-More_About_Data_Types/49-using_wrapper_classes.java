@@ -4,15 +4,17 @@ stuff[1] = new Passenger(0, 2);
 stuff[2] = 100;
 
 public class Flight {
-  int flightNumber;
-  char flightClass;
+  Integer flightNumber;
+  Character flightClass;
   // other members elided for clarity
 
   @Override
   public string toString() {
-    if (flightNumber > 0)
+    if (flightNumber != null)
       return "Flight #" + flightNumber;
-    else
+    else if (flightClass != null)
       return "Flight Class " + flightClass;
+    else
+      return "Flight identity not set ";
   }
 }
