@@ -12,6 +12,12 @@ public class Main {
       "multiply 11.0 3.0"     // 11.0 * 3.0 = 33.0
     };
 
+    CalculateHelper helper = new CalculateHelper();
+    for (String statement : statements) {
+      helper.process(statement);
+      System.out.println(helper);
+    }
+
     MathEquation[] equations = new MathEquation(4);
     equations[0] = new MathEquation('d', 100.0d, 50.0d);
     equations[1] = new MathEquation('a', 25.0d, 92.0d);
