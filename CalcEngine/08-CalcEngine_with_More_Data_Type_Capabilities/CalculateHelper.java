@@ -47,4 +47,14 @@ public class CalculateHelper {
     else if (commandString.equalsIgnoreCase(MathCommand.Divide.toString()))
       command = MathCommand.Divide;
   }
+
+  @Override
+  public String toString() {
+    // 1.0 + 2.0 = 3.0
+    char symbol = ' ';
+    switch (command) {
+      case Add:
+        symbol = '+';
+    }
+  }
 }
