@@ -59,7 +59,17 @@ public class CalculateHelper {
     char symbol = ' ';
     switch (command) {
       case Add:
-        symbol = '+';
+        symbol = ADD_SYMBOL;
+        break;
+      case Subtract:
+        symbol = SUBTRACT_SYMBOL;
+        break;
+      case Multiply:
+        symbol = MULTIPLY_SYMBOL;
+        break;
+      case Divide:
+        symbol = DIVIDE_SYMBOL;
+        break;
     }
   }
 }
