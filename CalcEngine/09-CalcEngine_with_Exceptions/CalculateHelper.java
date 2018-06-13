@@ -11,7 +11,7 @@ public class CalculateHelper {
   double rightValue;
   double result;
 
-  public void process(String statement) {
+  public void process(String statement) throws InvalidStatementException {
     // add 1.0 2.0
     String[] parts = statement.split(" ");
     if (parts.length != 3)
@@ -27,6 +27,8 @@ public class CalculateHelper {
     }
 
     setCommandFromString(commandString);
+    if (command = null)
+      throw new InvalidStatementException("Invalid command", statement);
 
     CalculateBase calculator = null;
     switch (command) {
