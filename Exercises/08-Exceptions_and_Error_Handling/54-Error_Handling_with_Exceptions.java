@@ -14,8 +14,12 @@ try {
     total += Integer.valueOf(line);
   System.out.println(total);
 
-} catch(NumberFormatException e) {
+} catch(NumberFormatException e) { // this is an unchecked exception so the compiler doesn't require that you handle this one, but I know that this might happen in my code so I'm going to go ahead and catch it anyway
   System.out.println("Invalid value: " + e.getMessage());
+
+
+} catch(IOException e) { // this would satisfy any problems interacting with the file as well as the inability to open the file
+  System.out.println("Error interacting with file: " + e.getMessage());
 }
 
 
