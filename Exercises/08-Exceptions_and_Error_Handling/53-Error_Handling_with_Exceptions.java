@@ -14,8 +14,13 @@ try {
   while ((line = reader.readLine()) != null) // notice that we're assigning line directly in the while loop
   total += Integer.valueOf(line);
   System.out.println("Total: " + total);
-} catch (Exception e) {
+} catch(Exception e) {
   System.out.println(e.getMessage());
 } finally {
-  reader.close();
+  try {
+    if (reader != null)
+    reader.close();
+  } catch(Exception e) {
+    System.out.println(e.getMessage());
+  }
 }
