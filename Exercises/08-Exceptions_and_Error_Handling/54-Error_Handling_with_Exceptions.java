@@ -13,8 +13,12 @@ try {
   while ((line = reader.readLine()) != null)
     total += Integer.valueOf(line);
   System.out.println(total);
-} catch(Exception e) {
-  System.out.println(e.getMessage());
+
+} catch(NumberFormatException e) {
+  System.out.println("Invalid value: " + e.getMessage());
+}
+
+
 } finally(Exception e) {
   try {
     if (reader != null)
