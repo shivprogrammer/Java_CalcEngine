@@ -8,7 +8,7 @@
 public class Flight {
   int passengers;
   // other members elided for clarity
-  public void addPassengers(String filename) {
+  public void addPassengers(String filename) throws IOException { // if we didn't put the throws on, the compiler would actually complain that we weren't dealing with the exception
     BufferedReader reader = null;
     reader = new BufferedReader(new FileReader(filename));
     String line = null;
