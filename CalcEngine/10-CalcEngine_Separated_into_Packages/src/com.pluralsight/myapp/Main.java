@@ -2,6 +2,12 @@ package com.pluralsight.myapp;
 
 import com.pluralsight.calcengine.CalculateHelper;
 import com.pluralsight.calcengine.InvalidStatementException;
+import com.pluralsight.calcengine.MathEquation;
+import com.pluralsight.calcengine.CalculateBase;
+import com.pluralsight.calcengine.Adder;
+import com.pluralsight.calcengine.Subtracter;
+import com.pluralsight.calcengine.Multiplier;
+import com.pluralsight.calcengine.Divider;
 
 public class Main {
   public static void main(String[] args) {
@@ -67,7 +73,7 @@ public class Main {
       System.out.println(equationOverload.getResult());
     }
 
-    static void useCalculatorBase() {      
+    static void useCalculatorBase() {
       System.out.println();
       System.out.println("Using inheritance");
       System.out.println();
