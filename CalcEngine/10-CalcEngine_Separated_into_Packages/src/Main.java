@@ -1,4 +1,4 @@
-package com.pluralsight.calcengine;
+package com.pluralsight.myapp;
 
 public class Main {
   public static void main(String[] args) {
