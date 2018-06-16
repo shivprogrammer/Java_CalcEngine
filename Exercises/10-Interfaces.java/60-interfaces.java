@@ -31,4 +31,6 @@ steve.setLevelAndDays(2, 180);
 Passenger lisa = new Passenger();
 lisa.setLevelAndDays(3, 730);
 
-Passenger[] passengers = 
+Passenger[] passengers = {bob, jane, steve, lisa};
+Arrays.sort(passengers); // this will actually sort based on the rules of our comparable implementation
+// returns lisa, steve, bob, jane
