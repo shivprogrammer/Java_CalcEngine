@@ -4,11 +4,6 @@ public class Flight implements Comparable {
 
   public int compareTo(Object o) {
     Flight f = (Flight) o;
-    if (flightTime < f.flightTime)
-      return -1;
-    else if (flightTime > f.flightTime)
-      return 1;
-    else
-      return 0;
+    return flightTime - f.flightTime;
   }
 }
