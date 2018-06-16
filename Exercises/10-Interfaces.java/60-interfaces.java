@@ -8,5 +8,13 @@ public class Passenger implements Comparable {
       return -1;
     else if (memberLevel < p.memberLevel)
       return 1;
+    else {
+      if (memberDays > p.memberDays)
+        return -1;
+      else if (memberDays < p.memberDays)
+        return 1;
+      else
+        return 0;
+    }
   }
 }
