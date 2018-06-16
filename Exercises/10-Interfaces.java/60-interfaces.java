@@ -18,3 +18,17 @@ public class Passenger implements Comparable {
     }
   }
 }
+
+Passenger bob = new Passenger();
+bob.setLevelAndDays(1, 180);
+
+Passenger jane = new Passenger();
+jane.setLevelAndDays(2, 90);
+
+Passenger steve = new Passenger();
+steve.setLevelAndDays(2, 180);
+
+Passenger lisa = new Passenger();
+lisa.setLevelAndDays(3, 730);
+
+Passenger[] passengers = 
