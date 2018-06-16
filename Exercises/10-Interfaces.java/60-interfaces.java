@@ -4,5 +4,9 @@ public class Passenger implements Comparable {
   private int memberDays;
   public int compareTo(Object o) {
     Passenger p = (Passenger) o;
+    if (memberLevel > p.memberLevel)
+      return -1;
+    else if (memberLevel < p.memberLevel)
+      return 1;
   }
 }
