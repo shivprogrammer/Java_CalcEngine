@@ -69,3 +69,11 @@ Jane
 Steve
 Lisa
 */
+
+// General run down of how this works
+Iterable<Person> laxIterable = lax045;
+Iterator<Person> persons = laxIterable.iterator();
+while(persons.hasNext()) {
+  Person p = persons.next();
+  System.out.println(p.getName());
+}
