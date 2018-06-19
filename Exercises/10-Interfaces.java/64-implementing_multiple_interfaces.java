@@ -7,6 +7,9 @@ public class Flight implements Comparable<Flight>, Iterable<Person> {
     Flight f = (Flight) o;
     return flightTime - f.flightTime;
   }
+  public Iterator<Person> iterator() {
+
+  }
 }
 
 public class Person {
@@ -24,4 +27,9 @@ public class Passenger extends Person implements Comparable<Passenger> {
 
 public interface Iterable<T> {
   Iterator<T> iterator();
+}
+
+public interface Iterator<T> {
+  boolean hasNext();
+  T next();
 }
