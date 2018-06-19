@@ -38,9 +38,12 @@ public class FlightIterator implements Iterator<Person> {
   private CrewMember[] crew;
   private Passenger[] roster;
   private int index = 0;
-  public FlightIterator(CrewMember[] crew, Passenger[] roster) {}
+  public FlightIterator(CrewMember[] crew, Passenger[] roster) {
+    this.crew = crew;
+    this.roster = roster;
+  }
   boolean hasNext() {
-
+    return index < (crew.length + roster.length);
   }
   public Person next() {
 
