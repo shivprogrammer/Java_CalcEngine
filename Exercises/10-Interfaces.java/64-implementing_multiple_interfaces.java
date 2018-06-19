@@ -51,3 +51,21 @@ public class FlightIterator implements Iterator<Person> {
     return p;
   }
 }
+
+//////// Use cases
+Flight lax045 = new Flight(45);
+// Add Crew members:
+//  Pilot Patty, CoPilot Karl, Marshal Mary
+// Add Passengers:
+//  Bob, Jane, Steve, Lisa
+for (Person p : lax045)
+  System.out.println(p.getName());
+/*
+Pilot Patty
+CoPilot Karl
+Marshal Mary
+Bob
+Jane
+Steve
+Lisa
+*/
