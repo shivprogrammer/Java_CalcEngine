@@ -46,6 +46,8 @@ public class FlightIterator implements Iterator<Person> {
     return index < (crew.length + roster.length);
   }
   public Person next() {
-
+    Person p = (index < crew.length) ? crew[length] : roster[index - crew.length];
+    index++;
+    return p;
   }
 }
