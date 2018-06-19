@@ -35,6 +35,10 @@ public interface Iterator<T> {
 }
 
 public class FlightIterator implements Iterator<Person> {
+  private CrewMember[] crew;
+  private Passenger[] roster;
+  private int index = 0;
+  public FlightIterator(CrewMember[] crew, Passenger[] roster) {}
   boolean hasNext() {
 
   }
