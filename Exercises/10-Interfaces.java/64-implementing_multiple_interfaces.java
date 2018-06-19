@@ -1,4 +1,4 @@
-public class Flight implements Comparable(Flight) {
+public class Flight implements Comparable<Flight>, Iterable<Person> {
   // other members elided for clarity
   private int flightTime;
   private CrewMember[] crew;
@@ -20,4 +20,8 @@ public class CrewMember extends Person {
 
 public class Passenger extends Person implements Comparable<Passenger> {
   // members elided for clarity
+}
+
+public interface Iterable<T> {
+  Iterator<T> iterator();
 }
