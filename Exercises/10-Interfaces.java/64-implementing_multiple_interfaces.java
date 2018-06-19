@@ -8,7 +8,7 @@ public class Flight implements Comparable<Flight>, Iterable<Person> {
     return flightTime - f.flightTime;
   }
   public Iterator<Person> iterator() {
-
+    return new FlightIterator(crew, roster);
   }
 }
 
