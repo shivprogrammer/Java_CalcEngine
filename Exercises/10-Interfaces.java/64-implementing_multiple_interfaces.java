@@ -33,3 +33,12 @@ public interface Iterator<T> {
   boolean hasNext();
   T next();
 }
+
+public class FlightIterator implements Iterator<Person> {
+  boolean hasNext() {
+
+  }
+  public Person next() {
+
+  }
+}
