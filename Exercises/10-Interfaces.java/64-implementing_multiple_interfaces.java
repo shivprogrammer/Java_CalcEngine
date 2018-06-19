@@ -9,10 +9,15 @@ public class Flight implements Comparable(Flight) {
   }
 }
 
-public class Passenger implements Comparable<Passenger> {
+public class Person {
+  // other members elided for clarity
+  private String name;
+}
+
+public class CrewMember extends Person {
   // members elided for clarity
 }
 
-public class CrewMember {
+public class Passenger extends Person implements Comparable<Passenger> {
   // members elided for clarity
 }
