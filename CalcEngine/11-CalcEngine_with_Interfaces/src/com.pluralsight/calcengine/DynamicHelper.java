@@ -8,6 +8,7 @@ public class DynamicHelper {
   }
 
   public String process(String statement) {
-    
+    // IN: add 1.0 2.0
+    // OUT: 1.0 + 2.0 = 3.0
   }
 }
