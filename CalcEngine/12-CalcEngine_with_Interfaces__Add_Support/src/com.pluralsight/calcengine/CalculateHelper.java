@@ -87,6 +87,7 @@ public class CalculateHelper {
     sb.append(' ');
     sb.append(symbol);
     sb.append(' ');
+    sb.append(rightValue);
     sb.append(" = ");
     sb.append(result);
 

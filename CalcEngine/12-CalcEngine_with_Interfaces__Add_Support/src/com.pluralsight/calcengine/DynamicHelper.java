@@ -27,5 +27,16 @@ public class DynamicHelper {
     double rightVal = Double.parseDouble(parts[2]); // 2.0
 
     double result = theHandler.doCalculation(leftVal, rightVal);
+
+    StringBuilder sb = new StringBuilder(20);
+    sb.append(leftVal);
+    sb.append(' ');
+    sb.append(theHandler.getSymbol());
+    sb.append(' ');
+    sb.append(rightVal);
+    sb.append(" = ");
+    sb.append(result);
+
+    return sb.toString();
   }
 }
