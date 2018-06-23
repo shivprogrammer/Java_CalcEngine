@@ -9,4 +9,11 @@ class Flight {
     else
       handleTooMany();
   }
+  static int allPassengers; // static means it's not associated with any instance
+  static int getAllPassengers() {
+    return allPassengers;
+  }
+  static int resetAllPassengers() {
+    allPassengers = 0;
+  }
 }
