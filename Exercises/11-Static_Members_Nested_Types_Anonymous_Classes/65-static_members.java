@@ -5,6 +5,7 @@ class Flight {
   void add1Passenger() {
     if (hasSeating()) {
       passengers += 1;
+      allPassengers += 1;
     }
     else
       handleTooMany();
@@ -17,3 +18,10 @@ class Flight {
     allPassengers = 0;
   }
 }
+
+Flight.resetAllPassengers();
+System.out.println(Flight.getAllPassengers()); // returns 0
+
+Flight lax045 = new Flight();
+lax045.add1Passenger(); // allPassengers == 1, lax045 passengers == 1
+lax034.add1Passenger(); // allPassengers = 2, lax045 passengers == 2
