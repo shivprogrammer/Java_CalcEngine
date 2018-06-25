@@ -15,5 +15,23 @@ public class CrewManager {
       }
       return cm;
     }
-// other members temporarily elided
-} // class CrewManager
+
+  static {
+    BufferedReader reader = null;
+    try {
+      reader = new BufferedReader(. . .);
+      String line = null;
+      int idx = 0;
+      pool = new CrewMember[10];
+      while ((line = reader.readLine()) != null) {
+        String[] parts = line.split(",");
+        FlightCrewJob job = FlightCrewJob.valueOf(parts[0]);
+        pool[idx] = new CrewMember(job);
+        pool[idx].setName(parts[1]);
+        idx++;
+      }
+    } catch (IOException e) {
+      // handle error
+    }
+  }
+}
