@@ -35,3 +35,9 @@ public class CrewManager {
     }
   }
 }
+
+CrewMember p = CrewManager.FindAvailable(FlightCrewJob.Pilot);
+
+CrewMember c = CrewManager.FindAvailable(FlightCrewJob.CoPilot);
+
+CrewMember a = CrewManager.FindAvailable(FlightCrewJob.AirMarshal);
