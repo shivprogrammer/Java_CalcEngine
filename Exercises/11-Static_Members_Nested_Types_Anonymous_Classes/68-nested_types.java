@@ -1,6 +1,7 @@
-public class Passenger implements Comparable {
+public class Passenger implements Comparable { // Passenger is the enclosing class
   // other members elided for clarity
-
-  private int memberLevel;
-  private int memberDays;
+  public static class RewardProgram { // this is the nested class
+    private int memberLevel;
+    private int memberDays;
+  }
 }
