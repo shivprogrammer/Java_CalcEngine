@@ -11,4 +11,18 @@ public class Passenger implements Comparable { // Passenger is the enclosing cla
     public void setMemberDays(int days) { this.memberDays = days; }
   }
   private RewardProgram rewardProgram = new RewardProgram();
+  public RewardProgram getRewardProgram() {
+    return rewardProgram;
+  }
 }
+
+Passenger steve = new Passenger();
+steve.SetName("Steve");
+steve.getRewardProgram().setLevel(3);
+steve.getRewardProgram().setMemberDays(180);
+
+Passenger.RewardProgram.platinum = new Passenger.RewardProgram();
+platinum.setLevel(3);
+
+if (steve.getRewardProgram().getLevel() == platinum.getLevel())
+  System.out.println("Steve is platinum");
